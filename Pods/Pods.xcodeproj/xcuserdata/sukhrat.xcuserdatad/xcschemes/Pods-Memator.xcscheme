@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0830"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EEF364771F13AD61002BE612"
-               BuildableName = "Memator.app"
-               BlueprintName = "Memator"
-               ReferencedContainer = "container:Memator.xcodeproj">
+               BlueprintIdentifier = "D7F9AF8F402646A65251C9D57913E7FA"
+               BuildableName = "Pods_Memator.framework"
+               BlueprintName = "Pods-Memator"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EEF364771F13AD61002BE612"
-            BuildableName = "Memator.app"
-            BlueprintName = "Memator"
-            ReferencedContainer = "container:Memator.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EEF364771F13AD61002BE612"
-            BuildableName = "Memator.app"
-            BlueprintName = "Memator"
-            ReferencedContainer = "container:Memator.xcodeproj">
+            BlueprintIdentifier = "D7F9AF8F402646A65251C9D57913E7FA"
+            BuildableName = "Pods_Memator.framework"
+            BlueprintName = "Pods-Memator"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EEF364771F13AD61002BE612"
-            BuildableName = "Memator.app"
-            BlueprintName = "Memator"
-            ReferencedContainer = "container:Memator.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
