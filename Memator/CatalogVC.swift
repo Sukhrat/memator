@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class CatalogVC: UIViewController, UICollectionViewDataSource {
+class CatalogVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -19,6 +19,7 @@ class CatalogVC: UIViewController, UICollectionViewDataSource {
         super.viewDidLoad()
         
         collectionView.dataSource = self
+        collectionView.delegate = self
         
         if let layout = collectionView?.collectionViewLayout as? PinterestLayout {
             layout.delegate = self
@@ -47,11 +48,11 @@ class CatalogVC: UIViewController, UICollectionViewDataSource {
         
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let meme = memes[indexPath.row]
-//        
-//        performSegue(withIdentifier: "ShowMeme", sender: meme)
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let meme = memes[indexPath.row]
+        
+        performSegue(withIdentifier: "EditMeme", sender: meme)
+    }
     
     func downloadMemes(complete: @escaping DownloadComplete) {
         
@@ -88,15 +89,15 @@ class CatalogVC: UIViewController, UICollectionViewDataSource {
         }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let memeVC = segue.destination as? MemeVC {
-//            if let meme = sender as? Meme {
-//                
-//                memeVC.meme = meme
-//            }
-//            
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let memeVC = segue.destination as? EditorVC {
+            if let meme = sender as? Meme {
+                
+                memeVC.meme = meme
+            }
+            
+        }
+    }
 
 
 }
